@@ -114,9 +114,9 @@ async function quickSort(heights, left, right) {
       //more elements on the left side of the pivot
       quickSort(heights, left, index - 1);
     }
-    if (index+1 < right) {
+    if (index< right) {
       //more elements on the right side of the pivot
-      quickSort(heights, index+1, right);
+      quickSort(heights, index, right);
     }
   }
   return heights;
